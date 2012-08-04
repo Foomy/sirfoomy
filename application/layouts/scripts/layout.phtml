@@ -50,7 +50,7 @@
 				<img src="/img/microbanner/jquery.png" alt="jQuery in Action!" title="jQuery in Action!" />
 			</div>
 		</footer>
-		<?php if ('/workfiles/' != $_SERVER['REQUEST_URI']): ?>
+		<?php if (APPLICATION_ENV !== 'production'): ?>
 			<div id="gotoWf">
 				<a href="/workfiles/">Goto workfiles »</a>
 			</div>
