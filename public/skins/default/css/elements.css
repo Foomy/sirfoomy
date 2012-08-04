@@ -1,0 +1,181 @@
+/**
+ * Stylesheets for main elements.
+ *
+ * 1. Maintenance
+ * 2. Footer
+ * 3. Splashscreen
+ * 4. Blog
+ * 4.1 articlelist
+ * 4.2 latest comments
+ * 999. impress
+ */
+
+/*************************************************
+ * 1. Maintenance
+ */
+
+#maintenance_text {
+    margin: 50px 0 50px 50px;
+}
+
+/*************************************************
+ * 2. Header & Footer
+ */
+}
+header .headerTop .logo {
+	border: 0;
+}
+
+footer .mainbox {
+	width: 750px;
+	padding: 5px;
+	float: left;
+}
+
+	footer .mainbox .geekCode {
+		padding: 20px 0 0 0;
+		font-size: 0.8em;
+	}
+
+footer .microbanner {
+	width: 180px;
+	padding: 5px;
+	float: left;
+}
+
+	.microbanner img {
+	  width:80px;
+	  height:15px;
+	  margin:0;
+	}
+
+/*************************************************
+ * 3. Splashscreen
+ */
+
+.quotebox {
+	width: 460px;
+	margin: 20px auto 0 auto;
+}
+
+	.quotebox textarea {
+		border: solid 2px #d44;
+		width: 100%;
+		height: 140px;
+		margin: auto;
+		padding: 5px;
+		resize: none;
+	}
+
+.optimizationNote {
+	width: 415px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+}
+
+.entrance {
+	border: dotted 1px #d44;
+	width: 100px;
+	padding: 10px;
+	margin: 40px auto 0 auto;
+	text-align: center;
+}
+
+.funDisclaimer {
+	width: 500px;
+	margin: 50px auto 30px auto;
+}
+
+	.funDisclaimer .warn{
+		margin: 5px 0;
+		font-weight: bold;
+		color: red;
+		text-align: center;
+	}
+
+/*************************************************
+ * 4. Blog
+ */
+
+/* 4.1 articlelist */
+
+#articlelist {
+	width: 500px;
+	margin: 15px auto;
+}
+
+	#articlelist .article {
+		border: solid 2px #d44;
+		border-radius: 10px;
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+		margin: 0 0 30px 0;
+	}
+
+	#articlelist .last {
+		margin: 0 0 10px 0;
+	}
+
+		#articlelist .article .head {
+			border: solid #ddd;
+			border-width: 0 0 1px 0;
+			padding: 10px;
+		}
+
+			#articlelist .article .headline a {
+				color: black;
+			}
+
+			#articlelist .article .author {
+				margin: 5px 0;
+				font-size: 0.9em;
+				color: #898989;
+			}
+
+			#articlelist .article .date {
+				margin: 5px 0;
+				font-size: 0.9em;
+				color: #898989;
+				float: right;
+			}
+
+		#articlelist .article .body {
+			padding: 10px;
+		}
+
+		#articlelist .article .foot {
+			border: solid #ddd;
+			border-width: 1px 0 0 0;
+			padding: 10px;
+		}
+
+/* 4.2 latest comments */
+
+.latestComments .head {
+	height: 15px;
+	padding: 3px 0 2px 15px;
+	font-weight: bold;
+	color: white;
+}
+
+.latestComments .comment {
+	margin: 0 0 7px 0;
+}
+
+	.latestComments .comment .userinfo {
+		font-size: 0.8em;
+		color: #999;
+	}
+
+/*************************************************
+ * 999. impress
+ */
+
+#impress section {
+	width: 650px;
+	margin: 15px auto;
+}
+
+	#impress section address {
+		margin: 0 0 0 40px;
+		font-size: 14px;
+	}

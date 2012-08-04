@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javascript>
+	<folders>
+		<folder>
+			<path>/js/</path>
+			<files>jquery.js</files>
+			<files>RunApp.js</files>
+		</folder>
+	</folders>
+</javascript>

@@ -1,0 +1,161 @@
+/**
+ * File for common stylesheets.
+ *
+ * 1. Horizontal rules
+ * 2. Images
+ * 3. Paragraphs
+ * 4. Links
+ * 5. Headlines
+ * 5.1 Simple headlines
+ * 5.2 No-margin headlines
+ * 6. Alignment & Visibility
+ */
+
+
+/*************************************************
+ * 1. Horizontal rules
+ */
+
+hr {
+	width: 90%;
+	color: orange;
+}
+
+/*************************************************
+ * 2. Images
+ */
+
+img {
+	border: 0;
+}
+
+/*************************************************
+ * 3. Paragraphs
+ */
+
+p {
+	margin: 0 0 15px 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.small {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+blockquote {
+	border: dashed 1px #ddd;
+	width: 425px;
+	margin: 100px 0 0 100px;
+	padding: 10px;
+	font-style: italic;
+}
+
+blockquote .cited {
+	padding: 10px 0 0 0;
+	font-weight: bold;
+	text-indent: 50px;
+}
+
+/*************************************************
+ * 4. Links
+ */
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ba4343;
+}
+
+a:hover {
+	color: #d44;
+}
+
+/*************************************************
+ * 5. Headlines
+ */
+
+/** 4.1 Simple headlines */
+
+h1 {
+	font-size: 1.5em;
+	margin: 15px 0 25px 0;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 15px 0 20px 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin: 15px 0 15px 0;
+}
+
+h4 {
+	font-size: 1.1em;
+	margin: 15px 0 10px 0;
+}
+
+h5 {
+	font-size: 1em;
+	margin: 15px 0 5px 0;
+}
+
+/** 4.2 No-margin headlines */
+
+.head1 {
+	font-size: 1.5em;
+	font-weight:bold;
+}
+
+.head2 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.head3 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.head4 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.head5 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*************************************************
+ * 6. Alignment & Visibility
+ */
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.clear {
+	clear: both;
+}
