@@ -194,3 +194,35 @@ footer .microbanner {
 		margin: 0 0 0 40px;
 		font-size: 14px;
 	}
+
+/*************************************************
+ * 1000. joke page
+ */
+
+#jokelink {
+	width: 50px;
+	margin: 130px 25px 10px 0;
+	font-size: 9px;
+	float: right;
+}
+
+#joke {
+	width: 500px;
+	margin: 20px auto;
+}
+
+	#joke h2 {
+		text-indent: 25px;
+	}
+
+	#joke p {
+		margin-bottom: 5px;
+	}
+
+	#joke .indent {
+		text-indent: 5px;
+	}
+
+	#joke .pointe {
+		margin: 15px 0;
+	}
