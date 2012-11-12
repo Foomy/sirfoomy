@@ -82,7 +82,7 @@ a:hover {
  * 5. Headlines
  */
 
-/** 4.1 Simple headlines */
+/** 5.1 Simple headlines */
 
 h1 {
 	font-size: 1.5em;
@@ -109,7 +109,7 @@ h5 {
 	margin: 15px 0 5px 0;
 }
 
-/** 4.2 No-margin headlines */
+/** 5.2 No-margin headlines */
 
 .head1 {
 	font-size: 1.5em;

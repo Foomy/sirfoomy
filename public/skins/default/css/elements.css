@@ -148,7 +148,22 @@ footer .microbanner {
 			padding: 10px;
 		}
 
-/* 4.2 latest comments */
+/* 4.2 article */
+
+#articletext {
+	width: 550px;
+	margin: auto;
+}
+
+	#articletext p {
+		text-align: justify;
+	}
+
+	#articletext .abstract {
+		font-weight: bold;
+	}
+
+/* 4.3 latest comments */
 
 .latestComments .head {
 	height: 15px;

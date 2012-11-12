@@ -46,7 +46,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	{
 		$view = new Zend_View();
 		$view->doctype('HTML5');
-		$view->headTitle('Foomys Welt 5.2');
+		$view->headTitle('Foomys Welt');
 
 		$view->headMeta()->setCharset('UTF-8');
 

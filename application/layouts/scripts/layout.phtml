@@ -1,17 +1,15 @@
 <?php echo $this->doctype() . PHP_EOL; ?>
 <html lang="de">
 <head>
-	<?php
-		echo $this->headMeta() . PHP_EOL;
-		echo $this->headTitle() . PHP_EOL;
+<?php
+	echo $this->headMeta()->toString("\t") . PHP_EOL;
+	echo $this->headTitle()->toString("\t") . PHP_EOL;
 
-		$this->loadSkin($this->skin);
-		echo $this->headLink() . PHP_EOL;
+	$this->loadSkin($this->skin);
+	echo $this->headLink()->toString("\t") . PHP_EOL;
 
-		echo $this->headScript() . PHP_EOL;
-	?>
-
-	<title>SirFoomys Welt</title>
+	echo $this->headScript()->toString("\t") . PHP_EOL;
+?>
 
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<script type="text/javascript" src="/js/RunApp.js"></script>
