@@ -206,6 +206,13 @@ footer .microbanner {
 	float: right;
 }
 
+#backlink {
+	width: 50px;
+	margin: 0 10px 10px 25px;
+	font-size: 9px;
+	float: left;
+}
+
 #joke {
 	width: 500px;
 	margin: 20px auto;
