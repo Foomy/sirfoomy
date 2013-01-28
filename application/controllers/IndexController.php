@@ -15,6 +15,11 @@ class IndexController extends Zend_Controller_Action
 		$this->view->layout = 'onecol';
 	}
 
+	public function riddleAction()
+	{
+		$this->view->layout = 'onecol';
+	}
+
 	public function impressAction()
 	{
 	}

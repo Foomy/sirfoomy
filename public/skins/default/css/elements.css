@@ -21,7 +21,7 @@
 /*************************************************
  * 2. Header & Footer
  */
-}
+
 header .headerTop .logo {
 	border: 0;
 }
@@ -232,4 +232,17 @@ footer .microbanner {
 
 	#joke .pointe {
 		margin: 15px 0;
+	}
+
+#riddle {
+	width: 300px;
+	margin: 50px;
+}
+
+	#riddle .numberPyramid {
+		text-align: center;
+	}
+
+	#riddle .question {
+		text-align: center;
 	}
