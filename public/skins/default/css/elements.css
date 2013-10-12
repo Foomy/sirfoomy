@@ -93,6 +93,11 @@ footer .microbanner {
 		text-align: center;
 	}
 
+blockquote.signal {
+	width: 490px;
+	margin: 50px auto 0 auto;
+}
+
 /*************************************************
  * 4. Blog
  */
@@ -200,8 +205,8 @@ footer .microbanner {
  */
 
 #jokelink {
-	width: 100px;
-	margin: 130px 25px 10px 0;
+	width: 50px;
+	margin: 100px 10px 10px 0;
 	font-size: 9px;
 	float: right;
 }
