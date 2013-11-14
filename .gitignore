@@ -6,6 +6,12 @@
 .project
 .settings/
 
+# zend specific files
+.zfproject.xml
+
+# NetBeans files
+nbproject/
+
 # ignore vi swapfiles
 .*.swp
 
@@ -15,10 +21,6 @@ library/Foo
 
 # logs
 logs/
-
-# zend specific files
-.zfproject.xml
-nbproject/
 
 # misc files
 public/info.php
