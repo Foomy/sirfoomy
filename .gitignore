@@ -18,4 +18,7 @@ logs/
 
 # zend specific files
 .zfproject.xml
-/nbproject/private/
+nbproject/
+
+# misc files
+public/info.php
