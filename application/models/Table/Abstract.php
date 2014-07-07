@@ -31,7 +31,7 @@ class Model_Table_Abstract extends Zend_Db_Table_Abstract
 	}
 
 	/**
-	 * Returns an instance of the table as selected
+	 * Returns an instance of a table as selected
 	 * by the parameter.
 	 *
 	 * @param   string $tableName
@@ -73,6 +73,14 @@ class Model_Table_Abstract extends Zend_Db_Table_Abstract
 		$select->from($this, array('count(*) as amount'));
 
 		return reset($this->fetchRow($select)->toArray());
+	}
+
+	public function getFieldList()
+	{
+		$tableDef = $this->info(self::METADATA);
+		$fieldList = array_keys($tableDef);
+
+		return $fieldList;
 	}
 
 	/**
@@ -177,6 +185,7 @@ class Model_Table_Abstract extends Zend_Db_Table_Abstract
 		}
 
 		$writer = new Zend_Log_Writer_Firebug();
+//		$writer = new Zend_Log_Writer_Stream(realpath(APPLICATION_PATH . '/../logs/php.log'), 'a');
 		$logger = new Zend_Log($writer);
 
 		for ($i = 0; $i < count($args); $i++) {

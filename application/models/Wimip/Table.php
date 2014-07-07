@@ -5,6 +5,8 @@ class Model_Wimip_Table extends Model_Table_Abstract
 	const T_NAME = 'wimip';
 
 	const F_IPV4        = 'ip_v4';
+	const F_IPV6        = 'ip_v6';
+	const F_LAST_SEEN   = 'last_seen';
 	const F_USERAGENT   = 'useragent';
 
 	protected $_name        = self::T_NAME;

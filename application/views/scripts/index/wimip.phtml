@@ -1,4 +1,65 @@
+<style type="text/css">
+/* <![CDATA[ */
+	#wimip .ipList table {
+		border-collapse: collapse;
+		margin: 19px auto;
+	}
+
+		#wimip .ipList th {
+			border: solid black;
+			border-width: 0 0 1px 0;
+			padding: 0px 11px 5px 0px;
+			text-align: left;
+		}
+
+		#wimip .ipList td {
+			padding: 7px 11px 7px 0px;
+		}
+
+		#wimip .ipList th.nr,
+		#wimip .ipList td.nr {
+			width: 25px;
+			padding-right: 10px;
+			text-align: right;
+		}
+
+		#wimip .ipList .ipv4 {
+			width: 110px;
+		}
+
+		#wimip .ipList .ipv6 {
+			width: 215px;
+		}
+/* ]]> */
+</style>
 <div id="wimip">
-	<div class="address"><?php echo $this->remoteIp; ?></div>
-	<div class="useragent"><?php echo $this->useragent; ?></div>
+	<div class="lastSeen">
+		<div class="address"><?php echo $this->remoteIp; ?></div>
+		<div class="useragent"><?php echo $this->useragent; ?></div>
+	</div>
+
+	<div class="ipList">
+		<table>
+			<tr>
+				<th class="nr">id</th>
+				<th>ipv4</th>
+				<th>ipv6</th>
+				<th>last seen</th>
+			</tr>
+			<?php foreach ($this->list as $item): ?>
+			<tr>
+				<td class="nr"><?php echo $item->getId(); ?></td>
+				<td class="ipv4"><?php echo $item->getIpv4(); ?></td>
+				<td class="ipv6"><?php echo (! empty($item->getIpv6())) ? $item->getIpv6() : '-'; ?></td>
+				<td><?php echo $item->getLastSeen(); ?></td>
+			</tr>
+			<?php endforeach; ?>
+			<tr>
+				<td class="nr">7677</td>
+				<td>192.168.134.156</td>
+				<td>2001:0db8:1234:ffff:ffff:ffff:ffff:ffff</td>
+				<td>2014-05-23 12:11:54</td>
+			</tr>
+		</table>
+	</div>
 </div>
