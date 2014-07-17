@@ -43,14 +43,12 @@
 			<tr>
 				<th class="nr">id</th>
 				<th>ipv4</th>
-				<th>ipv6</th>
 				<th>last seen</th>
 			</tr>
 			<?php foreach ($this->list as $item): ?>
 			<tr>
 				<td class="nr"><?php echo $item->getId(); ?></td>
 				<td class="ipv4"><?php echo $item->getIpv4(); ?></td>
-				<td class="ipv6"><?php echo (! empty($item->getIpv6())) ? $item->getIpv6() : '-'; ?></td>
 				<td><?php echo $item->getLastSeen(); ?></td>
 			</tr>
 			<?php endforeach; ?>
