@@ -33,13 +33,16 @@ class IndexController extends Zend_Controller_Action
 		$table = Model_Wimip_Table::getInstance();
 
 		if (false !== strpos($useragent, 'SirFoomy')) {
-			if (! $table->ipv4Exists($remoteIp)) {
+            if (null === ($row = $table->findByIpv4($remoteIp))) {
 				/** @var $row Model_Wimip_Table_Row */
-				$row = $table->createRow();
+                $row = $table->createRow();
 				$row->setIpv4($remoteIp);
 				$row->setUseragent($useragent);
 				$row->save();
 			}
+            else {
+                $row->setLastSeen(date('Y-m-d H:i:s')); 
+            }
 		}
 
 		$list = $table->getAll();

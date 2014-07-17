@@ -35,19 +35,29 @@ class Model_Wimip_Table extends Model_Table_Abstract
 	 * Returns a single row identified by it's ID.
 	 *
 	 * @param	int $id
-	 * @return	Model_Magazine_Table_Row
+	 * @return	Model_Wimip_Table_Row
 	 */
 	public function findById($id, $includeInactive = false)
 	{
 		$select = $this->select();
 		$select->where($this->quote(self::F_ID) . '=?', $id);
 
-		if (! $includeInactive) {
-			$select->where($this->quote(self::F_ACTIVE) . '=?', 1);
-		}
-
 		return $this->fetchRow($select);
 	}
+
+    /**
+     * Returns a single row identified by the IPv4 address.
+     *
+     * @param  int $id
+     * @return Model_Wimip_Table_Row
+     */
+    public function findByIpv4($ipv4)
+    {
+        $select = $this->select();
+        $select->where($this->quote(self::F_IPV4) . '=?', $ipv4);
+
+        return $this->fetchRow($select);
+    }
 
 	/**
 	 * Checks, whether a IP address is already stored.
@@ -57,8 +67,9 @@ class Model_Wimip_Table extends Model_Table_Abstract
 	 */
 	public function ipv4Exists($ipv4)
 	{
-		$sql = 'SELECT 1 FROM ' . self::T_NAME;
-		return (bool)$this->getAdapter()->fetchOne($sql);
+		$sql = "SELECT 1 FROM `%s` WHERE `%s` = '%s'";
+        $binded = sprintf($sql, self::T_NAME, self::F_IPV4, $ipv4);
+		return (bool)$this->getAdapter()->fetchOne($binded);
 	}
 
 	/**
