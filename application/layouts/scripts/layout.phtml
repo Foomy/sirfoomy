@@ -27,7 +27,7 @@
 			<div class="infobar"></div>
 		</header>
 
-		<?php echo $this->partial('_sublayouts/' . $this->layout . '.phtml'); ?>
+		<?php echo $this->partial('_sublayouts/' . strtolower($this->layout) . '.phtml'); ?>
 
 		<footer id="footer">
 			<div class="mainbox">
