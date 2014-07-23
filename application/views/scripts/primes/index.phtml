@@ -1,0 +1,11 @@
+<div id="primes">
+	<?php echo $this->form; ?>
+
+	<?php if ($this->primes !== null): ?>
+	<div class="results">
+		<div class="isPrime">Prim: <?php echo ($this->primes->isPrime()) ? 'Ja' : 'Nein'; ?>.</div>
+		<div class="nextPrime">Nächsthöhere Primzahl: <?php echo $this->primes->nextPrime(); ?></div>
+		<div class="prevPrime">Nächstniedrigere Primzahl: <?php echo $this->primes->prevPrime(); ?></div>
+	</div>
+	<?php endif; ?>
+</div>

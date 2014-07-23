@@ -251,3 +251,33 @@ blockquote.signal {
 	#riddle .question {
 		text-align: center;
 	}
+
+/*************************************************
+ * 1001. primes
+ */
+
+#primes form {
+	width: 100px;
+}
+
+	#primes dt {
+		width: 45px;
+		margin: 0 1px 0 0;
+		float: left;
+	}
+
+	#primes dd {
+		margin: 0 0 3px 0;
+	}
+
+	#primes input[type=text] {
+		width: 50px;
+	}
+
+	#primes input[type=submit] {
+		width: 100%;
+	}
+
+	#primes #submit-label {
+		display: none;
+	}
