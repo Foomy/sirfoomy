@@ -258,8 +258,8 @@ blockquote.signal {
 }
 
 #joke {
-	width: 500px;
-	margin: 20px auto;
+	width: 475px;
+	margin: 20px 0 0 135px;
 }
 
 	#joke h2 {
