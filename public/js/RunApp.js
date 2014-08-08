@@ -1,6 +1,11 @@
-var RunApp = {
+;var RunApp = {
 
-	equiliseColums: function () {
+	init: function () {
+		this.equilizeColums();
+		Gallery.init();
+	},
+
+	equilizeColums: function () {
 		var $content = $('.is_content'),
 			$aside = $('aside');
 
@@ -14,5 +19,5 @@ var RunApp = {
 };
 
 jQuery(document).ready(function() {
-	RunApp.equiliseColums();
+	RunApp.init();
 });

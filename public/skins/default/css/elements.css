@@ -186,6 +186,45 @@ blockquote.signal {
 		color: #999;
 	}
 
+/* 5 picture gallery */
+
+#galleries {
+}
+
+#galleries .gallery {
+	position: relative;
+	border: solid 1px transparent;
+	margin: 50px 0 0 25px;
+	width: 200px;
+	float: left;
+	cursor: pointer;
+}
+
+	#galleries .gallery img {
+		position: absolute;
+		border: solid 1px #d44;
+		border: solid 1px #000;
+		background: #fff;
+		padding: 3px;
+	}
+
+	#galleries .gallery .cover-thumbnail {
+		width: 180px;
+	}
+
+	#galleries .gallery .rot-left {
+		transform: rotate(-3deg);
+	}
+
+	#galleries .gallery .rot-right {
+		transform: rotate(3deg);
+	}
+
+	#galleries .gallery-title {
+		margin: 155px 0 0 0;
+	}
+
+
 /*************************************************
  * 999. impress
  */
