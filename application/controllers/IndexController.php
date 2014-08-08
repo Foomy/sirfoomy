@@ -45,7 +45,10 @@ class IndexController extends Zend_Controller_Action
             }
 		}
 
-		$list = $table->getAll();
+		$list = $table->getAll(0,0,array(
+			'field' => 'id',
+			'direction' => Model_Wimip_Table::DESC
+		));
 
 		$this->view->remoteIp = $remoteIp;
 		$this->view->useragent = $useragent;
