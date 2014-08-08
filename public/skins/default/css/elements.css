@@ -224,6 +224,24 @@ blockquote.signal {
 		margin: 155px 0 0 0;
 	}
 
+#gallery .mainview {
+	width: 750px;
+	float: left;
+}
+
+	#gallery .mainview img {
+		width: 750px;
+	}
+
+#gallery .thumbnails {
+	width: 200px;
+	overflow: scroll;
+	float: right;
+}
+
+	#gallery .thumbnail {
+		width: 180px;
+	}
 
 /*************************************************
  * 999. impress
