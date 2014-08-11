@@ -235,12 +235,15 @@ blockquote.signal {
 
 #gallery .thumbnails {
 	width: 200px;
-	overflow: scroll;
+	height: 565px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	float: right;
 }
 
 	#gallery .thumbnail {
 		width: 180px;
+		cursor: pointer;
 	}
 
 /*************************************************
