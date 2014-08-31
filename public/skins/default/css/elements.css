@@ -230,7 +230,7 @@ blockquote.signal {
 }
 
 	#gallery .mainview img {
-		width: 750px;
+		width: 100%;
 	}
 
 #gallery .thumbnails {
