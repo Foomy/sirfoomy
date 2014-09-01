@@ -38,11 +38,12 @@ class IndexController extends Zend_Controller_Action
                 $row = $table->createRow();
 				$row->setIpv4($remoteIp);
 				$row->setUseragent($useragent);
-				$row->save();
 			}
             else {
                 $row->setLastSeen(date('Y-m-d H:i:s')); 
             }
+
+			$row->save();
 		}
 
 		$list = $table->getAll(0,0,array(
