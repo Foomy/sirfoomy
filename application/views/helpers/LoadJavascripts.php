@@ -30,15 +30,11 @@ class Zend_View_Helper_LoadJavascripts
 	public function loadJavascripts()
 	{
 		$config = new Zend_Config_Xml('./' . self::JAVASCRIPT_STANDARD_FOLDER . '/javascript.xml');
-		$javascripts = $config->folders->toArray();
+		$javascripts = current($config->folders->toArray());
 
 		if (is_array($javascripts)) {
-			foreach ($javascripts as $folders) {
-				foreach ($folders as $folder) {
-					foreach ($folder['files'] as $file) {
-						$this->view->headScript()->appendFile($folder['path'] . $file, 'text/javascript');
-					}
-				}
+			foreach ($javascripts['files'] as $file) {
+				$this->view->headScript()->appendFile($javascripts['path'] . $file, 'text/javascript');
 			}
 		}
 

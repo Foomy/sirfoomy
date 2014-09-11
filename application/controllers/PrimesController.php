@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: SirFoomy
- * Date: 18.07.14
- * Time: 07:31
- * To change this template use File | Settings | File Templates.
- */
 
 class PrimesController extends Foo_Controller_Abstract
 {

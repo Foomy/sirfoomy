@@ -2,7 +2,14 @@
 
 	init: function () {
 		this.equilizeColums();
-		Gallery.init();
+
+		if (typeof Gallery !== 'undefined') {
+			Gallery.init();
+		}
+
+		if (typeof Lotto !== 'undefined') {
+			Lotto.init();
+		}
 	},
 
 	equilizeColums: function () {
@@ -13,7 +20,7 @@
 			$aside.height($content.height());
 		}
 		else {
-			$content.height($aside.height());
+			$content.css('min-height', $aside.height());
 		}
 	}
 };

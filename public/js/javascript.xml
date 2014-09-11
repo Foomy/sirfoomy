@@ -4,7 +4,9 @@
 		<folder>
 			<path>/js/</path>
 			<files>jquery.js</files>
+			<files>Utilities.js</files>
 			<files>Gallery.js</files>
+			<files>Lotto.js</files>
 			<files>RunApp.js</files>
 		</folder>
 	</folders>

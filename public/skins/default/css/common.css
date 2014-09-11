@@ -64,6 +64,14 @@ blockquote .cited {
 	text-indent: 50px;
 }
 
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
 /*************************************************
  * 4. Links
  */

@@ -341,3 +341,87 @@ blockquote.signal {
 	#primes #submit-label {
 		display: none;
 	}
+
+/*************************************************
+ * 1002. Lotto
+ */
+
+#lotto {
+	padding: 25px;
+}
+
+	#lotto .numberSelector {
+		width: 168px;
+		float: left;
+	}
+
+		#lotto .coupon {
+			list-style-type: none;
+			height: 168px;
+		}
+
+			#lotto .coupon .number {
+				position: relative;
+				border: solid 1px #f02b24;
+				width: 16px;
+				height: 16px;
+				margin: 1px;
+				padding: 2px;
+				cursor: pointer;
+				text-align: right;
+				float: left;
+			}
+
+			#lotto .coupon .number:nth-child(8),
+			#lotto .coupon .number:nth-child(15),
+			#lotto .coupon .number:nth-child(22),
+			#lotto .coupon .number:nth-child(29),
+			#lotto .coupon .number:nth-child(36),
+			#lotto .coupon .number:nth-child(43){
+				clear: left;
+			}
+
+				#lotto .coupon .number input {
+					 position: absolute;
+					 top: -1000px;
+				}
+
+				#lotto .coupon .number .selectCross {
+					position: absolute;
+					top: 2px;
+					left: 2px;
+				}
+
+		#lotto .controls {
+			list-style-type: none;
+			margin: 7px 0 0 0;
+		}
+
+			#lotto .controls li {
+				float: right;
+			}
+
+				#lotto .controls li .randomBtn {
+					margin: 0 5px 0 0;
+				}
+
+	#lotto .numCount {
+		border: 1px solid #cdcdcd;
+		box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.4) inset;
+		width: 160px;
+		padding: 2px 3px;
+		margin: 5px 0 0 0;
+	}
+
+	#lotto .output {
+		border: solid 1px #bebebe;
+		width: 470px;
+		min-height: 198px;
+		float: right;
+	}
+
+		#lotto .output .spinner {
+			width: 31px;
+			height: 31px;
+			margin: 83px auto 0;
+		}

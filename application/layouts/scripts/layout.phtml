@@ -8,11 +8,9 @@
 	$this->loadSkin($this->skin);
 	echo $this->headLink()->toString("\t") . PHP_EOL;
 
+	$this->loadJavascripts();
 	echo $this->headScript()->toString("\t") . PHP_EOL;
 ?>
-
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/RunApp.js"></script>
 </head>
 
 <body>
@@ -56,8 +54,8 @@
 	</div>
 
 	<div id="lightbox" class="lightbox hidden is_layer">
-		<div class="control"><button class="is_layer_close">[x]</button></div>
-		<div class="content"></div>
+		<div class="control"><button class="is_layerClose">[x]</button></div>
+		<div class="content is_layerContent"></div>
 	</div>
 </div>
 

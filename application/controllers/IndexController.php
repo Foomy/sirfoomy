@@ -56,4 +56,8 @@ class IndexController extends Zend_Controller_Action
 		$this->view->list = $list;
 		$this->view->fieldList = $table->getFieldList();
 	}
+
+	public function lottoAction()
+	{
+	}
 }
