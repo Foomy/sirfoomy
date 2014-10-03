@@ -47,7 +47,7 @@ class IndexController extends Zend_Controller_Action
 		}
 
 		$list = $table->getAll(0,0,array(
-			'field' => 'id',
+			'field' => 'last_seen',
 			'direction' => Model_Wimip_Table::DESC
 		));
 
