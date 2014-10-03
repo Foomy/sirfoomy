@@ -24,7 +24,8 @@ class Model_Wimip_Table_Row extends Model_Table_Row_Abstract
 
 	public function getLastSeen()
 	{
-		return $this->{Model_Wimip_Table::F_LAST_SEEN};
+		$date = new Zend_Date($this->{Model_Wimip_Table::F_LAST_SEEN});
+		return $date->get('dd.MM.Y HH:mm:ss');
 	}
 
 	public function setLastSeen($lastSeen)
