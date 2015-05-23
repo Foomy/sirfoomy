@@ -425,3 +425,11 @@ blockquote.signal {
 			height: 31px;
 			margin: 83px auto 0;
 		}
+
+/*************************************************
+ * 1003. Lotto
+ */
+
+#countdown .values {
+	text-align: center;
+}

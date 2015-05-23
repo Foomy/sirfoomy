@@ -81,3 +81,32 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		date_default_timezone_set('Europe/Berlin');
 	}
 }
+
+
+/**
+ * Dumps variables for debugging.
+ *
+ * @param mixed $var        The variable you want to dump.
+ * @param       mixed       var2 .. var<i>n</i> Optional!
+ */
+function debug($var, $var2 = null)
+{
+	// Greetings from C  ;-)
+	$argc = func_num_args();
+	$argv = func_get_args();
+	$backtrace = debug_backtrace();
+	$invokingFile = $backtrace[0]['file'];
+	$invokingLine = $backtrace[0]['line'];
+
+	$logger = new Zend_Log(new Zend_Log_Writer_Firebug());
+	$logger->log($invokingFile . ': ' . $invokingLine, Zend_Log::DEBUG);
+
+	if ($argc > 1) {
+		for ($i = 0; $i < $argc; $i++) {
+			$logger->log($argv[$i], Zend_Log::DEBUG);
+		}
+	}
+	else {
+		$logger->log($var, Zend_Log::DEBUG);
+	}
+}
