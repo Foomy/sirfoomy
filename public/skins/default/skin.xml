@@ -7,5 +7,6 @@
 		<stylesheet>elements.css</stylesheet>
 <!-- 		<stylesheet>navigation.css</stylesheet> -->
 <!-- 		<stylesheet>forms.css</stylesheet> -->
+		<stylesheet>form-generator.css</stylesheet>
 	</stylesheets>
 </skin>

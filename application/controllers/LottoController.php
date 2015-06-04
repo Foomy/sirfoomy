@@ -2,6 +2,7 @@
 
 class LottoController extends Foo_Controller_Abstract
 {
+	const MAX_COMBINATIONS_ON_6BY49 = 13983816; // Source: Internet.
 	const MAX_NUMBER_COMBINATIONS = 420;
 
 	private $numberPool;
