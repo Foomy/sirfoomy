@@ -3,3 +3,5 @@ AuthType Basic
 AuthUserFile /var/htaccess/sirfoomy.de/dl/.htpasswd
 require user SirFoomy
 require user Lui
+require user Tikkar
+require user Gregor
