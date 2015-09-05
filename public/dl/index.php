@@ -20,6 +20,7 @@ function formatSize($size)
   }
   elseif ( $size >= 1048576 ) {
     $ret['size'] = $size / 1048576;
+    $ret['unit'] = 'MB';
   }
   elseif ( $size >= 1024 ) {
     $ret['size'] = $size / 1024;
