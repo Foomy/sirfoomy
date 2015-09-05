@@ -55,11 +55,11 @@ while (false !== ($entry = $dir->read())) {
     echo '&nbsp; <a href="' . $entry . '">herunterladen</a><br>';
     $fileCount++;
   }
+}
 
-  if ( $fileCount > 0 ) {
-    echo "\n<br>\nEs wurden $fileCount Dateien gefunden.";
-  }
-  else {
-    echo "\n<br>\nEs sind aktuell keine Dateien im Download-Verzeichnis.";
-  }
+if ( $fileCount > 0 ) {
+  echo "\n<br>\nEs wurden $fileCount Dateien gefunden.";
+}
+else {
+  echo "\n<br>\nEs sind aktuell keine Dateien im Download-Verzeichnis.";
 }
