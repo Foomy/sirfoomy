@@ -33,8 +33,8 @@ $filesBlacklist = array(
 	'.htaccess',
 	'index.php',
 	'index.html',
-    '.index.php.swp',
-    '.index.html.swp'
+	'.index.php.swp',
+	'.index.html.swp'
 );
 
 $fileExtBlacklist = array(
@@ -48,20 +48,21 @@ $dir = dir($pathinfo['dirname']);
 
 $fileCount = 0;
 while (false !== ($entry = $dir->read())) {
-	if (! in_array($entry, $filesBlacklist)) {
+	if ( ! in_array($entry, $filesBlacklist) ) {
 		echo $entry . "\t(" . filesize($entry) . ' Bytes)';
-        echo ' <a href="/dl/'.$entry.'">downloaden</a>';
-        echo '<br>';
-	if ((! in_array($ext, $fileExtBlacklist)) && (! in_array($entry, $filesBlacklist))) {
-		echo $entry . "\t(" . formatSize(filesize($entry)) . ')';
-		echo '&nbsp; <a href="' . $entry . '">herunterladen</a><br>';
-		$fileCount++;
+		echo ' <a href="/dl/' . $entry . '">downloaden</a>';
+		echo '<br>';
+		if ( (! in_array($ext, $fileExtBlacklist)) && (! in_array($entry, $filesBlacklist)) ) {
+			echo $entry . "\t(" . formatSize(filesize($entry)) . ')';
+			echo '&nbsp; <a href="' . $entry . '">herunterladen</a><br>';
+			$fileCount++;
+		}
 	}
-}
 
-if ($fileCount > 0) {
-	echo "\n<br>\nEs wurden $fileCount Dateien gefunden.";
-}
-else {
-	echo "\n<br>\nEs sind aktuell keine Dateien im Download-Verzeichnis.";
+	if ( $fileCount > 0 ) {
+		echo "\n<br>\nEs wurden $fileCount Dateien gefunden.";
+	}
+	else {
+		echo "\n<br>\nEs sind aktuell keine Dateien im Download-Verzeichnis.";
+	}
 }
