@@ -264,20 +264,6 @@ blockquote.signal {
  * 1000. joke page
  */
 
-#jokelink {
-	width: 50px;
-	margin: 100px 10px 10px 0;
-	font-size: 9px;
-	float: right;
-}
-
-#backlink {
-	width: 50px;
-	margin: 0 10px 10px 25px;
-	font-size: 9px;
-	float: left;
-}
-
 #joke {
 	width: 475px;
 	margin: 20px 0 0 135px;

@@ -5,7 +5,7 @@
 		<stylesheet>common.css</stylesheet>
 		<stylesheet>reusable.css</stylesheet>
 		<stylesheet>elements.css</stylesheet>
-<!-- 		<stylesheet>navigation.css</stylesheet> -->
+ 		<stylesheet>navigation.css</stylesheet>
 <!-- 		<stylesheet>forms.css</stylesheet> -->
 		<stylesheet>form-generator.css</stylesheet>
 	</stylesheets>
