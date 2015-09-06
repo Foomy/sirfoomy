@@ -26,3 +26,6 @@ logs/
 public/info.php
 2008-05-12_2008-05-17-urlaub*
 application/configs/application.ini
+
+#dl
+public/dl/*
