@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/**
+ * Common stylesheets for SirFoomys Welt
+ *
+ * This file contains commonly basic styles such as for
+ * paragraphs, headings and so on.
+ *
+ * Table of contents:
+ *  1. links
+ *
+ */
+
+
+/* 1. links */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ba4343;
+}
+
+a:hover {
+  color: #d44;
+}
+
+nav a {
+  font-weight: inherit;
+}

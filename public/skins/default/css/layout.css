@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+html, body {
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#sitewrapper {
+  width: 100%;
+}
+
+  #pagewrapper {
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+    header {
+      background: url('../img/header_bg.png') repeat-x;
+      width: 100%;
+    }
+
+    nav#main {
+      margin-top: -3px;
+    }
+
+    #content {
+      min-height: 350px;
+      padding: 0 15px;
+    }
+
+    footer {
+      border: solid #f17826;
+      border-width: 2px 0 0 0;
+      padding: 10px;
+    }
