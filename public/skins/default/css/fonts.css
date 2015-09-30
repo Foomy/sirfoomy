@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/**
+ * Font css file for SirFoomys Welt.
+ *
+ * In this file web fonts are imported.
+ *
+ * Table of contents:
+ *  1. Override bootstrap font path
+ */
+
+/* 1. Override bootstrap font path */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('/skins/default/fonts/glyphicons-halflings-regular.eot');
+  src: url('/skins/default/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}

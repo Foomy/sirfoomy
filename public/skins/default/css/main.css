@@ -10,6 +10,7 @@
  *  1. header
  *  2. footer
  *  3. impress
+ *  4. contact
  *
  */
 
@@ -41,5 +42,29 @@ footer .geek-code-block {
 
 /* 3. impress */
 #impress address {
-  margin: -15
+  margin-left: 15px;
 }
+
+  #impress p {
+    padding: 0;
+  }
+
+
+/* 4. contact */
+#contact form {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+  #contact textarea {
+    min-height: 170px;
+  }
+
+  #contact .controls ul {
+    list-style-type: none;
+  }
+
+    #contact .controls ul li {
+      margin-right: 5px;
+      float: right;
+    }
