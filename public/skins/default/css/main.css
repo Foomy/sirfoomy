@@ -68,3 +68,15 @@ footer .geek-code-block {
       margin-right: 5px;
       float: right;
     }
+
+
+/* 5. privacy */
+#privacy .complimentary-close {
+  margin: 25px 0 15px 0;
+  font-style: italic;
+}
+
+  #privacy .complimentary-close span {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }

@@ -26,3 +26,9 @@ a:hover {
 nav a {
   font-weight: inherit;
 }
+
+
+/* 2. paragraphs */
+.italic {
+  font-style: italic;
+}
