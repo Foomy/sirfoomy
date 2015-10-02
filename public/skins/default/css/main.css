@@ -9,8 +9,11 @@
  * Table of contents:
  *  1. header
  *  2. footer
- *  3. impress
- *  4. contact
+ *  3. start page (home)
+ *  4. impress
+ *  5. contact
+ *  6. privacy
+ *  7. curriculum vitae
  *
  */
 
@@ -39,6 +42,22 @@ footer .geek-code-block {
   font-size: 1.2rem;
 }
 
+
+/* 3. start page (home) */
+#home blockquote {
+  display: inline-block;
+  border: dashed 1px #ddd;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+  #home blockquote .quote-author {
+    padding: 10px 0 0 0;
+    font-weight: bold;
+    text-indent: 50px;
+  }
 
 /* 3. impress */
 #impress address {
@@ -80,3 +99,56 @@ footer .geek-code-block {
     font-size: 1.2rem;
     line-height: 1.2rem;
   }
+
+
+/* 6. curriculum vitae */
+#curriculum-vitae .bubble {
+  border: solid 1px transparent;
+  margin: auto;
+}
+
+  #curriculum-vitae .bubble p {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+#curriculum-vitae .r100 {
+  border-radius: 75px;
+  width: 100px;
+  height: 100px;
+}
+
+  #curriculum-vitae .r100 p {
+    padding: 30px 10px;
+    font-size: 1.1rem;
+  }
+
+#curriculum-vitae .r150 {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+  #curriculum-vitae .r150 p {
+    padding: 50px 25px;
+  }
+
+#curriculum-vitae .o100x75 {
+  border-radius: 60px / 50px;
+  width: 100px;
+  height: 75px;
+}
+
+  #curriculum-vitae .o100x75 p {
+    padding: 15px 7px;
+  }
+
+#curriculum-vitae .green {
+  background: transparent linear-gradient(#b8db29, #5a8f00);
+  color: #000;
+}
+
+#curriculum-vitae .blue {
+  background: transparent linear-gradient(#2e88c4, #075698);
+  color: #fff;
+}
