@@ -118,8 +118,45 @@ footer .geek-code-block {
   height: 100px;
 }
 
-  #curriculum-vitae .r100 p {
+  #curriculum-vitae .r100 p.two-lines {
     padding: 30px 10px;
+    font-size: 1.1rem;
+  }
+
+  #curriculum-vitae .r100 p.four-lines {
+    padding: 20px 10px;
+    font-size: 1.0rem;
+  }
+
+#curriculum-vitae .r115 {
+  border-radius: 75px;
+  width: 115px;
+  height: 115px;
+}
+
+  #curriculum-vitae .r115 p.three-lines {
+    padding: 30px 10px;
+    font-size: 1.1rem;
+  }
+
+  #curriculum-vitae .r115 p.four-lines {
+    padding: 20px 10px;
+    font-size: 1.1rem;
+  }
+
+#curriculum-vitae .r125 {
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+}
+
+  #curriculum-vitae .r125 p.three-lines {
+    padding: 30px 10px;
+    font-size: 1.1rem;
+  }
+
+  #curriculum-vitae .r125 p.four-lines {
+    padding: 25px 10px;
     font-size: 1.1rem;
   }
 
@@ -129,8 +166,42 @@ footer .geek-code-block {
   height: 150px;
 }
 
-  #curriculum-vitae .r150 p {
+  #curriculum-vitae .r150 p.two-lines {
     padding: 50px 25px;
+  }
+
+  #curriculum-vitae .r150 p.three-lines {
+    padding: 45px 25px;
+  }
+
+#curriculum-vitae .r175 {
+  border-radius: 150px;
+  width: 175px;
+  height: 175px;
+}
+  #curriculum-vitae .r175 p.five-lines {
+    padding: 33px 18px;
+  }
+
+#curriculum-vitae .r200 {
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+}
+
+  #curriculum-vitae .r200 p.three-lines {
+    padding: 58px 10px;
+  }
+
+#curriculum-vitae .o75x50 {
+  border-radius: 60px / 50px;
+  width: 80px;
+  height: 60px;
+}
+
+  #curriculum-vitae .o75x50 p {
+    padding: 15px 7px;
+    font-size: 1.1rem;
   }
 
 #curriculum-vitae .o100x75 {
