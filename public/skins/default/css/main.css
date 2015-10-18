@@ -59,7 +59,7 @@ footer .geek-code-block {
     text-indent: 50px;
   }
 
-/* 3. impress */
+/* 4. impress */
 #impress address {
   margin-left: 15px;
 }
@@ -69,7 +69,7 @@ footer .geek-code-block {
   }
 
 
-/* 4. contact */
+/* 5. contact */
 #contact form {
   margin-left: 15px;
   margin-bottom: 15px;
@@ -89,7 +89,7 @@ footer .geek-code-block {
     }
 
 
-/* 5. privacy */
+/* 6. privacy */
 #privacy .complimentary-close {
   margin: 25px 0 15px 0;
   font-style: italic;
@@ -101,10 +101,22 @@ footer .geek-code-block {
   }
 
 
-/* 6. curriculum vitae */
-#curriculum-vitae .row:nth-child(even) {
-  background: transparent linear-gradient(to right, #c6c6c6, #fff);
+/* 7. curriculum vitae */
+#curriculum-vitae blockquote {
+  border: 0;
+  margin: 20px 20px 0 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  float: right;
 }
+
+  #curriculum-vitae blockquote .author {
+    padding: 10px 0 0 0;
+    font-weight: bold;
+    text-indent: 50px;
+  }
+
 #curriculum-vitae .bubble {
   position: relative;
   border: solid 1px transparent;
@@ -125,6 +137,13 @@ footer .geek-code-block {
   background: transparent linear-gradient(#2e88c4, #075698);
   color: #fff;
 }
+
+  #curriculum-vitae .bubble-blue a {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+  }
 
 #curriculum-vitae .birth,
 #curriculum-vitae .elementary-school {
@@ -176,14 +195,14 @@ footer .geek-code-block {
   transform: rotate(-40deg);
 }
 #curriculum-vitae .high-school-grade {
-  position: relative;
+  position: absolute;
+  top: -23px;
+  left: -9px;
   border-radius: 58px / 46px;
   width: 80px;
   height: 60px;
-  margin: -30px 0 0 -25px;
-  padding: 15px 7px;
+  padding: 13px 7px;
   font-size: 1.1rem;
-  float: left;
   z-index: 2;
 }
 
@@ -326,6 +345,17 @@ footer .geek-code-block {
   width: 2px;
   height: 16px;
 }
+#curriculum-vitae .staedte-reisen {
+  position: absolute;
+  top: 32px;
+  left: 178px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
 
 #curriculum-vitae .anw-2008 {
   border-radius: 150px;
@@ -343,6 +373,17 @@ footer .geek-code-block {
   background: #000;
   width: 2px;
   height: 16px;
+}
+#curriculum-vitae .trackhints {
+  position: absolute;
+  top: 35px;
+  left: -38px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
 }
 
 #curriculum-vitae .von-affenfels {
@@ -362,6 +403,17 @@ footer .geek-code-block {
   width: 2px;
   height: 16px;
 }
+#curriculum-vitae .magnus {
+  position: absolute;
+  top: 54px;
+  left: -53px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
 
 #curriculum-vitae .kwick {
   border-radius: 150px;
@@ -379,6 +431,17 @@ footer .geek-code-block {
   background: #000;
   width: 2px;
   height: 16px;
+}
+#curriculum-vitae .kwick-site {
+  position: absolute;
+  top: 54px;
+  left: -53px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
 }
 
 #curriculum-vitae .netsdirekt {
@@ -398,6 +461,28 @@ footer .geek-code-block {
   width: 2px;
   height: 16px;
 }
+#curriculum-vitae .weingut-wechsler {
+  position: absolute;
+  top: 66px;
+  left: 187px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#curriculum-vitae .packaging {
+  position: absolute;
+  top: 137px;
+  left: 160px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
 
 #curriculum-vitae .anw-2015 {
   border-radius: 150px;
@@ -405,5 +490,38 @@ footer .geek-code-block {
   height: 200px;
   margin-top: 20px;
   padding: 58px 10px;
+}
+#curriculum-vitae .highend {
+  position: absolute;
+  top: 19px;
+  left: -20px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#curriculum-vitae .wimip {
+  position: absolute;
+  top: 79px;
+  left: -76px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#curriculum-vitae .cobi {
+  position: absolute;
+  top: 149px;
+  left: -54px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 11px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
 }
 
