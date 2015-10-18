@@ -1,46 +1,43 @@
 <?php require_once 'header.phtml'; ?>
-<?php require_once 'main-navigation.phtml'; ?>
 
-<div id="content">
-  <div id="contact">
-    <h3>Kontaktformular</h3>
+<div id="contact">
+  <h3>Kontaktformular</h3>
 
-    <div class="row">
-      <p class="col-sm-8">
-        Für den Fall, dass gerade kein E-Mail-Client zur Hand ist, können Sie
-        mir auch gerne über dieses Kontaktformular eine Nachricht zukommen lassen.
-      </p>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <form id="contact-form" action="/contact/send/">
-          <fieldset class="data">
-            <div class="form-group has-success has-feedback">
-              <label for="name" class="control-label">Name</label>
-              <input type="text" id="name" class="form-control" name="name" placeholder="Ihren Namen">
-              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputSuccess2Status" class="sr-only">(success)</span>
-            </div>
-            <div class="form-group has-error">
-              <label for="email">E-Mail</label>
-              <input type="email" id="email" class="form-control" name="email" placeholder="Ihre E-Mail-Adresse">
-            </div>
-            <div class="form-group">
-              <label for="message">Nachricht</label>
-              <textarea id="message" name="message" class="form-control" placeholder="Ihre Nachricht an mich."
-                        rows="1" cols="1"></textarea>
-            </div>
-          </fieldset>
-          <fieldset class="controls">
-            <ul>
-              <li><input id="submit-button" class="btn btn-success" type="submit" value="Abschicken"></li>
-              <li>
-                <button id="cancel-button" class="btn btn-default">Abbrechen</button>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-      </div>
+  <div class="row">
+    <p class="col-sm-8">
+      Für den Fall, dass gerade kein E-Mail-Client zur Hand ist, können Sie
+      mir auch gerne über dieses Kontaktformular eine Nachricht zukommen lassen.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <form id="contact-form" action="/contact/send/">
+        <fieldset class="data">
+          <div class="form-group has-success has-feedback">
+            <label for="name" class="control-label">Name</label>
+            <input type="text" id="name" class="form-control" name="name" placeholder="Ihren Namen">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+          </div>
+          <div class="form-group has-error">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Ihre E-Mail-Adresse">
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Ihre Nachricht an mich."
+                      rows="1" cols="1"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="controls">
+          <ul>
+            <li><input id="submit-button" class="btn btn-success" type="submit" value="Abschicken"></li>
+            <li>
+              <button id="cancel-button" class="btn btn-default">Abbrechen</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </div>
   </div>
 </div>
