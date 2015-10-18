@@ -102,6 +102,9 @@ footer .geek-code-block {
 
 
 /* 6. curriculum vitae */
+#curriculum-vitae .row:nth-child(even) {
+  background: transparent linear-gradient(to right, #c6c6c6, #fff);
+}
 #curriculum-vitae .bubble {
   position: relative;
   border: solid 1px transparent;
@@ -262,14 +265,14 @@ footer .geek-code-block {
 }
 #curriculum-vitae .lotus-notes:after {
   position: absolute;
-  top: 49px;
-  left: 194px;
+  top: 11px;
+  left: 235px;
   content: '';
   border: 0;
   background: #000;
   width: 2px;
-  height: 166px;
-  transform: rotate(-61deg);
+  height: 244px;
+  transform: rotate(-66deg);
 }
 #curriculum-vitae .it-specialist-apprenticeship {
   border-radius: 150px;
