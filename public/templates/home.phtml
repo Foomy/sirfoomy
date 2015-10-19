@@ -2,13 +2,27 @@
 
 <div id="home">
   <div class="row">
-    <div class="col-sm-4 col-sm-offset-2">
-      <blockquote class="mr-universe">
-        Das Signal kann man nicht aufhalten.
-        <div class="quote-author">-- Mr. Universe</div>
+    <div class="col-sm-12">
+      <blockquote>
+        <div class="first-part">The best way to predict the future...</div>
+        <div class="second-part">... is to invent it.</div>
+        <div class="author">-- Alan Kay</div>
       </blockquote>
     </div>
   </div>
 </div>
+<script>
+  window.setTimeout(function () {
+    $('blockquote .first-part').fadeIn(2000, function () {
+      window.setTimeout(function () {
+        $('blockquote .second-part').fadeIn(2000, function () {
+          window.setTimeout(function () {
+            $('blockquote .author').fadeIn(2000);
+          }, 1000);
+        });
+      }, 1000);
+    });
+  }, 750);
+</script>
 
 <?php require_once 'footer.phtml'; ?>
