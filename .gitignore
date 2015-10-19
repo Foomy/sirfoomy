@@ -29,3 +29,6 @@ application/configs/application.ini
 
 #dl
 public/dl/*
+
+#vendor-libs
+vendor/FooLib-2

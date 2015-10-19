@@ -94,6 +94,11 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
+    'view_helpers'    => array(
+      'invokables' => array(
+        'loadSkin'    => 'Foo\View\Helper\LoadSkin'
+      )
+    ),
     // Placeholder for console routes
     'console' => array(
         'router' => array(
