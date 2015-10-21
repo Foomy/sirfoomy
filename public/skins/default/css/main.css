@@ -23,7 +23,8 @@
 
 /* 2. footer */
 footer .footer-quote {
-  font-size: 1rem;
+  padding-top: 7px;
+  font-size: 1.1rem;
   /*float: left;*/
 }
 

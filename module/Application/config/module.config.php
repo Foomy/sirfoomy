@@ -15,33 +15,43 @@ return array(
           ),
         ),
       ),
-      'home'        => array(
+      'contact'        => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
-          'route'    => '/',
+          'route'    => '/contact/',
           'defaults' => array(
             'controller' => 'Application\Controller\Index',
-            'action'     => 'index',
+            'action'     => 'contact',
           ),
         ),
       ),
-      'home'        => array(
+      'legal-notice'        => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
-          'route'    => '/',
+          'route'    => '/legal-notice/',
           'defaults' => array(
             'controller' => 'Application\Controller\Index',
-            'action'     => 'index',
+            'action'     => 'legal-notice',
           ),
         ),
       ),
-      'home'        => array(
+      'privacy'        => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
-          'route'    => '/',
+          'route'    => '/privacy/',
           'defaults' => array(
             'controller' => 'Application\Controller\Index',
-            'action'     => 'index',
+            'action'     => 'privacy',
+          ),
+        ),
+      ),
+      'faq'        => array(
+        'type'    => 'Zend\Mvc\Router\Http\Literal',
+        'options' => array(
+          'route'    => '/faq/',
+          'defaults' => array(
+            'controller' => 'Application\Controller\Index',
+            'action'     => 'faq',
           ),
         ),
       ),
@@ -151,7 +161,7 @@ return array(
         'route' => 'home'
       ),
       array(
-        'label' => 'About',
+        'label' => 'Über mich',
         'route' => 'about-blank',
         'class' => 'dropdown',
         'pages' => array(

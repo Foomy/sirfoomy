@@ -34,15 +34,17 @@
 
     <footer>
       <div class="row">
-        <div class="footer-quote col-sm-8">
+        <div class="footer-quote col-sm-6 col-sm-offset-1">
           Psst... Gerüchten zufolge wurde hier in der Gegend ein Footer gesehen.<br>
           Belohnung: 3 Tassen Kaffee für sachdienliche Hinweise die zur Ergreifung führen.
         </div>
-        <div class="footer-links col-sm-4">
-          :: <a href="/legal-notice/">Impressum</a>
-          :: <a href="/contact/">Kontakt</a> ::<br>
-          :: <a href="http://www.spiegel.de/netzwelt/politik/0,1518,375970,00.html" target="_blank">Disclaimer</a>
-          :: <a href="/faq/">FAQ</a> ::<br>
+        <div class="footer-links col-sm-5">
+          :: <a href="/contact/"><?php echo $this->translate('Kontakt'); ?></a>
+          :: <a href="/legal-notice/"><?php echo $this->translate('Impressum'); ?></a> ::<br>
+          :: <a href="/privacy/"><?php echo $this->translate('Datenschutz'); ?></a>
+          :: <a href="http://www.spiegel.de/netzwelt/politik/0,1518,375970,00.html"
+                target="_blank"><?php echo $this->translate('Disclaimer'); ?></a>
+          :: <a href="/faq/"><?php echo $this->translate('FAQ'); ?></a> ::<br>
         </div>
       </div>
       <div class="geek-code-block row">
