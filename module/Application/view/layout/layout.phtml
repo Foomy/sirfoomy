@@ -3,14 +3,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <?php echo $this->headTitle('SirFoomys ' . $this->translate('Welt'))->setSeparator(' - ')->setAutoEscape(false); ?>
-  <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')->appendHttpEquiv('X-UA-Compatible', 'IE=edge'); ?>
+  <?php echo $this->headTitle('SirFoomys ' . $this->translate('Welt'))->setSeparator(' - ')->setAutoEscape(false) . PHP_EOL; ?>
+  <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')->appendHttpEquiv('X-UA-Compatible', 'IE=edge') . PHP_EOL; ?>
 
   <?php
-    $this->loadSkin();
-    echo $this->headLink() . PHP_EOL;
-  ?>
+  $this->loadSkin();
+  echo $this->headLink() . "\n\n";
 
+  $this->loadScripts();
+  echo $this->headScript() . PHP_EOL;
+  ?>
 </head>
 <body>
 <div id="sitewrapper">
@@ -21,25 +23,7 @@
 
     <nav id="main" class="navbar navbar-default col-sm-12">
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="javascript:;">Link 1</a></li>
-          <li><a href="javascript:;">Link 2</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 1<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="javascript:;">Link 3</a></li>
-              <li><a href="javascript:;">Link 4</a></li>
-            </ul>
-          </li>
-          <li><a href="javascript:;">Link 5</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="javascript:;">Link 6</a></li>
-              <li><a href="javascript:;">Link7</a></li>
-            </ul>
-          </li>
-        </ul>
+        <?php echo $this->navigation('navigation')->menu()->setPartial('partial/menu')->render(); ?>
       </div>
     </nav>
     <div class="clearfix"></div>
@@ -55,10 +39,10 @@
           Belohnung: 3 Tassen Kaffee für sachdienliche Hinweise die zur Ergreifung führen.
         </div>
         <div class="footer-links col-sm-4">
-          :: <a href="javascript:;">Impressum</a>
-          :: <a href="javascript:;">Kontakt</a> ::<br>
+          :: <a href="/legal-notice/">Impressum</a>
+          :: <a href="/contact/">Kontakt</a> ::<br>
           :: <a href="http://www.spiegel.de/netzwelt/politik/0,1518,375970,00.html" target="_blank">Disclaimer</a>
-          :: <a href="javascript:;">FAQ</a> ::<br>
+          :: <a href="/faq/">FAQ</a> ::<br>
         </div>
       </div>
       <div class="geek-code-block row">
@@ -69,6 +53,5 @@
     </footer>
   </div>
 </div>
-<?php echo $this->inlineScript() ?>
 </body>
 </html>

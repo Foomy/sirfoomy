@@ -7,6 +7,10 @@ return array(
     'common.css',
     'layout.css',
     'main.css'
+  ),
+  'scripts' => array(
+    'jquery/jquery-2.1.4.min.js',
+    'bootstrap-3.3.5/bootstrap.min.js'
   )
 );
 
