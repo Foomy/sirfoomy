@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * Main stylesheet file for Foomys Welt.
+ * Main stylesheet file for SirFoomys Welt.
  *
  * This file contains the styles for non-reusable elements such like
  * header or footer content.
@@ -11,9 +11,8 @@
  *  2. footer
  *  3. start page (home)
  *  4. impress
- *  5. contact
- *  6. privacy
- *  7. curriculum vitae
+ *  5. privacy
+ *  6. curriculum vitae
  *
  */
 
@@ -87,27 +86,7 @@ footer .geek-code-block {
   }
 
 
-/* 5. contact */
-#contact form {
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
-
-  #contact textarea {
-    min-height: 170px;
-  }
-
-  #contact .controls ul {
-    list-style-type: none;
-  }
-
-    #contact .controls ul li {
-      margin-right: 5px;
-      float: right;
-    }
-
-
-/* 6. privacy */
+/* 5. privacy */
 #privacy .complimentary-close {
   margin: 25px 0 15px 0;
   font-style: italic;
@@ -119,7 +98,7 @@ footer .geek-code-block {
   }
 
 
-/* 7. curriculum vitae */
+/* 6. curriculum vitae */
 #curriculum-vitae blockquote {
   border: 0;
   margin: 20px 20px 0 0;

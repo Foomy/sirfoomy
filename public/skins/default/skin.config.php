@@ -6,7 +6,8 @@ return array(
     'bootstrap-3.3.5/bootstrap-theme.css',
     'common.css',
     'layout.css',
-    'main.css'
+    'main.css',
+    'forms.css'
   ),
   'scripts' => array(
     'jquery/jquery-2.1.4.min.js',

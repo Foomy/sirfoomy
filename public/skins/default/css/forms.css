@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/**
+ * Stylesheet file for form pages of SirFoomys Welt.
+ *
+ * This file contains the styles for non-reusable elements such like
+ * header or footer content.
+ *
+ * Table of contents:
+ *  1. Contact
+ *
+ */
+
+
+/* 1. Contact */
+#contact p {
+  padding-left: 30px;
+}
+
+#contact form {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+  #contact textarea {
+    min-height: 170px;
+  }
+
+  #contact .controls ul {
+    list-style-type: none;
+  }
+
+    #contact .controls ul li {
+      margin-right: 5px;
+      float: right;
+    }
