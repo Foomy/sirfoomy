@@ -15,6 +15,13 @@ return array(
           ),
         ),
       ),
+      'work-templates' => array(
+        'type'    => 'Zend\Mvc\Router\Http\Literal',
+        'options' => array(
+          'route'    => '/work-templates/',
+          'defaults' => array(),
+        ),
+      ),
       'contact'        => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
@@ -168,6 +175,10 @@ return array(
           array(
             'label' => 'Lebenslauf',
             'route' => 'about-cv'
+          ),
+          array(
+            'label' => 'Kontakt',
+            'route' => 'contact'
           )
         )
       )
