@@ -1,0 +1,52 @@
+<?php
+  $form = $this->form;
+  $form->setAttribute('action', $this->url('contact'));
+  $form->prepare();
+?>
+<div id="contact">
+  <h3>Kontaktformular</h3>
+
+  <div class="row">
+    <p class="col-sm-6">
+      Zu errichen bin ich normalerweise über die im
+      <a href="/legal-notice/">Impressum</a> aufgeführte E-Mail Adresse.
+    </p>
+  </div>
+
+  <div class="row">
+    <p class="col-sm-6">
+      Für den Fall, dass gerade kein E-Mail-Client zur Hand ist, können Sie
+      mir auch gerne über dieses Kontaktformular eine Nachricht zukommen lassen.
+      Alle Felder sind Pflichtfelder.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <?php echo $this->form()->openTag($form); ?>
+      <fieldset class="data">
+        <div class="form-group has-success has-feedback">
+          <?php echo $this->formLabel($form->get('name')); ?>
+          <?php echo $this->formElement($form->get('name')); ?>
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          <span id="inputSuccess2Status" class="sr-only">(success)</span>
+        </div>
+        <div class="form-group has-error">
+          <?php echo $this->formLabel($form->get('email')); ?>
+          <?php echo $this->formElement($form->get('email')); ?>
+        </div>
+        <div class="form-group">
+          <?php echo $this->formLabel($form->get('message')); ?>
+          <?php echo $this->formElement($form->get('message')); ?>
+        </div>
+      </fieldset>
+      <fieldset class="controls">
+        <ul>
+          <li><?php echo $this->formElement($form->get('submit')); ?></li>
+          <li><?php echo $this->formElement($form->get('cancel')); ?></li>
+        </ul>
+      </fieldset>
+      <?php echo $this->form()->closeTag(); ?>
+    </div>
+  </div>
+</div>

@@ -9,24 +9,27 @@
       <a href="/legal-notice/">Impressum</a> aufgeführte E-Mail Adresse.
     </p>
   </div>
+
   <div class="row">
     <p class="col-sm-6">
       Für den Fall, dass gerade kein E-Mail-Client zur Hand ist, können Sie
       mir auch gerne über dieses Kontaktformular eine Nachricht zukommen lassen.
+      Alle Felder sind Pflichtfelder.
     </p>
   </div>
+
   <div class="row">
     <div class="col-sm-6">
       <form id="contact-form" action="/contact/send/">
         <fieldset class="data">
           <div class="form-group has-success has-feedback">
             <label for="name" class="control-label">Name</label>
-            <input type="text" id="name" class="form-control" name="name" placeholder="Ihren Namen">
+            <input type="text" id="name" class="form-control" name="name" placeholder="Ihr Name">
             <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
             <span id="inputSuccess2Status" class="sr-only">(success)</span>
           </div>
           <div class="form-group has-error">
-            <label for="email">E-Mail</label>
+            <label for="email" class="control-label">E-Mail</label>
             <input type="email" id="email" class="form-control" name="email" placeholder="Ihre E-Mail-Adresse">
           </div>
           <div class="form-group">
@@ -38,9 +41,7 @@
         <fieldset class="controls">
           <ul>
             <li><input id="submit-button" class="btn btn-success" type="submit" value="Abschicken"></li>
-            <li>
-              <button id="cancel-button" class="btn btn-default">Abbrechen</button>
-            </li>
+            <li><button id="cancel-button" class="btn btn-default">Abbrechen</button></li>
           </ul>
         </fieldset>
       </form>

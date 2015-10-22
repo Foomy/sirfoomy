@@ -12,7 +12,13 @@
  */
 
 
-/* 1. Contact */
+/* 1. Common form styles */
+form label.required:after {
+  content: '*';
+}
+
+
+/* 2. Contact */
 #contact p {
   padding-left: 30px;
 }

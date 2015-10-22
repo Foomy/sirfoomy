@@ -4,6 +4,7 @@ return array(
   'stylesheets' => array(
     'bootstrap-3.3.5/bootstrap.css',
     'bootstrap-3.3.5/bootstrap-theme.css',
+    'fonts.css',
     'common.css',
     'layout.css',
     'main.css',
