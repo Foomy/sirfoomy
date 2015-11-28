@@ -15,6 +15,7 @@
 /* 1. Common form styles */
 form label.required:after {
   content: '*';
+  font-weight: normal;
 }
 
 
@@ -28,6 +29,10 @@ form label.required:after {
   margin-bottom: 15px;
 }
 
+  #contact fieldset.data {
+    margin-top: 20px;
+  }
+
   #contact textarea {
     min-height: 170px;
   }
@@ -40,3 +45,10 @@ form label.required:after {
       margin-right: 5px;
       float: right;
     }
+
+#contact .thanks {
+  border: solid #58b548;
+  border-width: 1px 0;
+  background: #cdeaca;
+  padding: 10px 15px;
+}

@@ -8,6 +8,8 @@
  *
  * Table of contents:
  *  1. links
+ *  2. paragraphs
+ *  3. headlines
  *
  */
 
@@ -31,4 +33,14 @@ nav a {
 /* 2. paragraphs */
 .italic {
   font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/* headlines */
+h2 {
+  margin-bottom: 25px;
 }

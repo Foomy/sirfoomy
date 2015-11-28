@@ -43,8 +43,9 @@ class Contact extends Form
       'type'       => Email::class,
       'name'       => 'email',
       'attributes' => array(
-        'id'    => 'email',
-        'class' => 'form-control'
+        'id'          => 'email',
+        'class'       => 'form-control',
+        'placeholder' => 'Ihre E-Mail Adresse'
       ),
       'options'    => array(
         'label'            => 'E-Mail',
@@ -58,11 +59,12 @@ class Contact extends Form
       'type'       => Textarea::class,
       'name'       => 'message',
       'attributes' => array(
-        'id' => 'message',
-        'class' => 'form-control'
+        'id'          => 'message',
+        'class'       => 'form-control',
+        'placeholder' => 'Ihre Nachricht an mich.'
       ),
       'options'    => array(
-        'label' => 'Nachricht',
+        'label'            => 'Nachricht',
         'label_attributes' => array(
           'class' => 'control-label required'
         )
@@ -77,7 +79,7 @@ class Contact extends Form
         'id'    => 'cancel-button',
         'class' => 'btn btn-cancel'
       ),
-      'options' => array(
+      'options'    => array(
         'label' => 'Abbrechen'
       )
     ));
@@ -87,7 +89,7 @@ class Contact extends Form
       'name'       => 'submit',
       'attributes' => array(
         'type'  => 'submit',
-        'value' => 'Speichern',
+        'value' => 'Abschicken',
         'id'    => 'submit-button',
         'class' => 'btn btn-success'
       ),

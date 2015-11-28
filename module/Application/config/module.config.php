@@ -5,7 +5,7 @@ namespace Application;
 return array(
   'router'          => array(
     'routes' => array(
-      'home'        => array(
+      'home'           => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
           'route'    => '/',
@@ -32,7 +32,7 @@ return array(
           ),
         ),
       ),
-      'legal-notice'        => array(
+      'legal-notice'   => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
           'route'    => '/legal-notice/',
@@ -52,7 +52,7 @@ return array(
           ),
         ),
       ),
-      'faq'        => array(
+      'faq'            => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
           'route'    => '/faq/',
@@ -62,7 +62,7 @@ return array(
           ),
         ),
       ),
-      'about-blank' => array(
+      'about-blank'    => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
           'route'    => '/about/',
@@ -72,7 +72,7 @@ return array(
           ),
         ),
       ),
-      'about-cv' => array(
+      'about-cv'       => array(
         'type'    => 'Zend\Mvc\Router\Http\Literal',
         'options' => array(
           'route'    => '/curriculum-vitae/',
@@ -86,7 +86,7 @@ return array(
       // new controllers and actions without needing to create a new
       // module. Simply drop new controllers in, and you can access them
       // using the path /application/:controller/:action
-      'application' => array(
+      'application'    => array(
         'type'          => 'Literal',
         'options'       => array(
           'route'    => '/application',
@@ -154,10 +154,14 @@ return array(
     'template_path_stack'      => array(
       __DIR__ . '/../view',
     ),
+    'template_map'             => array(
+      'mail/contact/text' => __DIR__ . '/../view/mail/contact/mailbody.txt.phtml',
+      'mail/contact/html' => __DIR__ . '/../view/mail/contact/mailbody.htm.phtml'
+    )
   ),
   'view_helpers'    => array(
     'invokables' => array(
-      'loadSkin'   => 'Foo\View\Helper\LoadSkin',
+      'loadSkin'    => 'Foo\View\Helper\LoadSkin',
       'loadScripts' => 'Foo\View\Helper\LoadScripts',
     )
   ),
@@ -182,6 +186,13 @@ return array(
           )
         )
       )
+    )
+  ),
+  'contact_form'    => array(
+    'mail_config' => array(
+      'to'      => 'foomy.code@arcor.de',
+      'from'    => 'noreply@sirfoomy.de',
+      'subject' => 'Nachricht über das Kontaktformular'
     )
   ),
   // Placeholder for console routes

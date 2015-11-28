@@ -65,9 +65,9 @@ footer .geek-code-block {
   }
 
   #home blockquote .author {
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 0;
     text-align: left;
-    text-indent: 360px;
+    text-indent: 180px;
   }
 
   #home blockquote .author,
@@ -473,6 +473,17 @@ footer .geek-code-block {
   position: absolute;
   top: 137px;
   left: 160px;
+  border-radius: 104px / 51px;
+  width: 121px;
+  height: 60px;
+  padding: 20px 7px;
+  font-size: 1.1rem;
+  z-index: 2;
+}
+#curriculum-vitae .drv-hessen {
+  position: absolute;
+  top: 35px;
+  left: -45px;
   border-radius: 104px / 51px;
   width: 121px;
   height: 60px;
