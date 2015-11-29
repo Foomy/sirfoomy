@@ -11,6 +11,8 @@
   <ul>
     <li><a href="home.phtml" target="_blank">Startseite</a></li>
     <li><a href="curriculum-vitae.phtml" target="_blank">Lebenslauf</a></li>
+    <li><a href="joke.phtml" target="_blank">Witz</a></li>
+    <li><a href="riddle.phtml" target="_blank">Rätsel</a></li>
   </ul>
 
   <h3>Law pages</h3>

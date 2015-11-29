@@ -13,7 +13,8 @@
  *  4. impress
  *  5. privacy
  *  6. curriculum vitae
- *
+ *  7. joke
+ *  8. riddle
  */
 
 
@@ -533,3 +534,27 @@ footer .geek-code-block {
   z-index: 2;
 }
 
+
+/* 7. joke */
+#joke-irish {
+  width: 60%;
+}
+
+  #joke-irish .indent {
+    margin-left: 20px;
+  }
+
+  #joke-irish .pointe {
+    margin: 30px 0;
+  }
+
+
+/* 8. riddle */
+#riddle-number-pyramid {
+  width: 50%;
+}
+
+  #riddle-number-pyramid .pyramid {
+    text-align: center;
+    margin: 20px 0;
+  }
