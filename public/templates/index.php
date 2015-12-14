@@ -17,7 +17,7 @@
 
   <h3>Law pages</h3>
   <ul>
-    <li><a href="impress.phtml" target="_blank">Impressum</a></li>
+    <li><a href="legal-notice.phtml" target="_blank">Impressum</a></li>
     <li><a href="contact.phtml" target="_blank">Kontakt</a></li>
     <li><a href="privacy.phtml" target="_blank">Datenschutz</a></li>
   </ul>
