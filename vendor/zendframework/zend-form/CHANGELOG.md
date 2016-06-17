@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 2.7.0 - 2016-02-22
+
+### Added
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- [#40](https://github.com/zendframework/zend-form/pull/40) and
+  [#43](https://github.com/zendframework/zend-form/pull/43) prepare the
+  component to be forwards compatible with each of the following:
+  - zend-eventmanager v3
+  - zend-hydrator v2.1
+  - zend-servicemanager v3
+  - zend-stdlib v3
+- [#14](https://github.com/zendframework/zend-form/pull/14) ensures that
+  collections can remove all elements when populating values.
+
+## 2.6.0 - 2015-09-22
+
+### Added
+
+- [#17](https://github.com/zendframework/zend-form/pull/17) updates the component
+  to use zend-hydrator for hydrator functionality; this provides forward
+  compatibility with zend-hydrator, and backwards compatibility with
+  hydrators from older versions of zend-stdlib.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
 ## 2.5.3 - 2015-09-22
 
 ### Added

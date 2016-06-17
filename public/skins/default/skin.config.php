@@ -10,10 +10,12 @@ return array(
     'main.css',
     'forms.css'
   ),
-  'scripts' => array(
+  'scripts'     => array(
     'jquery/jquery-2.1.4.min.js',
     'bootstrap-3.3.5/bootstrap.min.js',
-    'Home.js'
+    'Home.js',
+    'Gallery/Overview.js',
+    'Gallery.js',
   )
 );
 
