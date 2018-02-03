@@ -20,7 +20,8 @@ library/Zend
 library/Foo
 
 # logs
-logs/
+data/logs/*
+!data/logs/.gitkeep
 
 # misc files
 public/info.php
