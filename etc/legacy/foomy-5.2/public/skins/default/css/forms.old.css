@@ -1,0 +1,85 @@
+/*************************************************
+ * Formulare allgemein
+ */
+
+.zend_form {
+    padding: 5px 5px 25px 5px;
+    margin: 15px 0 0 0;
+}
+
+.zend_form dt {
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+.zend_form dd {
+    padding: 3px;
+}
+
+#submit-element, #reset-element {
+    float:right;
+}
+
+#submit-label, #reset-label {
+    display:none;
+}
+
+.errors {
+    font-weight:bold;
+    color:red;
+}
+
+fieldset {
+    border: 0;
+    width: 100%;
+}
+
+
+/*************************************************
+ * Formularelemente allgemein
+ */
+
+textarea {
+    border: solid 2px maroon;
+}
+
+input[type=text], input[type=password] {
+    border: solid 2px maroon;
+    width: 200px;
+}
+
+input[type=submit], input[type=reset], button {
+    background: #ccc;
+    padding: 1px;
+}
+
+.savebtn {
+    color: green;
+}
+
+.cancelbtn {
+    color: red;
+}
+
+.deletebtn {
+    padding: 0;
+    color: red;
+}
+
+.last-field {
+    border: double black;
+    border-width: 0 0 3px 0;
+    padding: 3px 3px 5px 3px;
+}
+
+
+/*************************************************
+ * Modul: Default
+ * Seite: Splash Screen (Index)
+ */
+
+#randomquote {
+    width: 500px;
+    height: 100px;
+}
+

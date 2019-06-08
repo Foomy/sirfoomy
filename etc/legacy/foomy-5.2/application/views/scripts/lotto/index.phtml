@@ -1,0 +1,26 @@
+<div id="lotto">
+	<div class="output is_output">
+		<div class="spinner is_spinner hidden">
+			<img src="/skins/default/img/ajax-loader.gif" alt="ajax spinner" title="Work in progress...">
+		</div>
+	</div>
+	<div class="numberSelector">
+		<ul class="coupon">
+			<?php for ($i = 1; $i <= 49; $i++): ?>
+			<li class="number is_number is_number_<?php echo $i; ?>" data-num="<?php echo $i; ?>">
+				<?php echo $i; ?>
+				<input type="checkbox" name="number[<?php echo $i; ?>]" value="<?php echo $i; ?>"
+				       class="is_cb is_cb<?php echo $i; ?>">
+				<img class="selectCross is_selectCross is_selectCross_<?php echo $i; ?> hidden" src="/skins/default/icons/16/cross.png" alt="" title="Number <?php echo $i; ?> is selected. Click to unselect.">
+			</li>
+			<?php endfor; ?>
+		</ul>
+		<ul class="controls clear">
+			<li><button class="green is_submitBtn">Generate</button></li>
+			<li><button class="red is_resetBtn">Reset</button></li>
+			<li><button class="randomBtn is_randomBtn">Zufall!</button></li>
+		</ul>
+		<div class="clear"></div>
+		<input type="number" name="numCount" class="numCount hidden is_numCount" placeholder="Anzahl eingeben!">
+	</div>
+</div>

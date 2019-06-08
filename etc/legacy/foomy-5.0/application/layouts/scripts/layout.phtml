@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?php echo $this->doctype('XHTML11'); ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <?php
+    echo $this->headMeta()."\n  ";
+    echo $this->headTitle()."\n  ";
+    
+    $this->headLink()->appendStylesheet('/css/style.css.php');
+    $this->headLink(array(
+      'rel'  => 'shortcut icon',
+      'href' => '/img/favicon.ico',
+      'type' => 'image/x-icon',
+      'PREPEND',
+    ));
+    echo $this->headLink()."\n  ";
+
+    $this->headScript()->appendFile('/js/jquery.js', 'text/javascript');
+    $this->headScript()->appendFile('/js/main.js', 'text/javascript');
+    echo $this->headScript();      
+  ?>
+  <script type="text/javascript">
+  /* <![CDATA[ */
+    $(document).ready(function() {
+      setExternalLinks();
+    });
+  /* ]]> */
+  </script>
+</head>
+
+<body> 
+  <div id="headerbox">
+    <div id="inoutbox">
+      <?php
+        if ( isset($this->auth) && $this->auth->hasIdentity() ) {
+          echo '<a href="/user/logout/" class="logout">Ausloggen</a>';
+        } else {
+          echo '<a href="/user/login/" class="login">Anmelden</a>';
+        }
+      ?>
+    </div>
+    <a href="/home/"><img src="/img/logo.png" id="logo" alt="" /></a>
+    <div id="slogan">Ich leb in meiner eigenen Welt. Das ist ok, man kennt mich dort.</div>
+  </div><!-- /headerbox -->
+
+  <div id="statusbox">
+    <div id="breadcrumb">
+      <?php echo $this->navigation()->breadcrumbs(); ?>
+    </div><!-- /breadcrumb -->
+  </div><!-- /statusbox -->
+
+  <div id="leftbox">
+    <?php if ( ! $this->isSplash ): ?>
+      <div id="navigation">
+        <div class="title">Navigation:</div>
+        <?php echo $this->partial('navigation.phtml', array('navigation' => $this->navigation())); ?>
+      </div>
+    <?php endif; ?>
+  </div><!-- /leftbox -->
+  
+  <div id="rightbox">
+    <?php if ( ! $this->isSplash ): ?>
+      <div id="links">
+        <div class="head">Links</div>
+        <div class="body">
+          <a href="http://www.trackhints.com">Trackhints.com</a><br />
+          <a href="http://www.staedte-reisen.de">Städte-Reisen.de</a>
+        </div>
+      </div>
+      <div id="wimip">
+        <a href="http://www.wieistmeineip.de/cometo/"><img src="http://www.wieistmeineip.de/ip-adresse/" style="border:0; width:125px; height:125px" alt="IP" /></a>
+      </div>
+    <?php endif; ?>
+  </div><!-- /rightbox -->
+    
+  <div id="content">     
+    <?php if ( ! empty($this->message) ): ?>
+      <div id="messages">
+        <?php
+          echo $this->message;
+          $this->message = '';
+        ?>
+      </div><!-- /messages -->
+    <?php endif; ?>
+
+    <?php if ( isset($this->head1) and (! empty($this->head1)) ): ?>
+      <div class="head1"><?php echo $this->head1; ?></div>
+    <?php endif; ?>
+    <?php if ( isset($this->head2) and (! empty($this->head2)) ): ?>
+      <div class="head2"><?php echo $this->head2; ?></div>
+    <?php endif; ?>
+
+    <?php echo $this->layout()->content ?>
+
+  </div><!-- /content -->
+  
+  <div id="footerbox">
+    <table id="footerTbl">
+      <tr>
+        <td id="footerLeftbox">
+          <a href='http://www.zcat.de/docs/hacker-emblem/'><img src='http://www.catb.org/hacker-emblem/glider.png' alt='hacker emblem' /></a>
+        </td>
+        <td id="footerCenterbox">
+          .:: <!--a href="/sitemap/"-->Sitemap<!--/a--> |
+          <a href="/impressum/">Impressum</a> |
+          <a href="mailto:foomy.code@arcor.de">Kontakt</a> |
+          <!--a href="/faq/"-->FAQ<!--/a--> |
+          <a href="http://www.spiegel.de/netzwelt/politik/0,1518,375970,00.html" rel="extern">Disclaimer</a>
+          ::.<br />
+          Designed &amp; programmed by Sascha Schneider<br />
+          <p id="geekcode">
+            <a href="http://www.geekcode.com/" rel="extern">GCS d-- s-:+ a C++$>(+++) UL P+ L+ E? W++ N+ o? K? w !O !M V? PS+ PE Y+ PGP+ t++>(+++) 5+ X+ R !tv b+ DI D G e-- h r- y?</a>
+          </p>
+        </td>
+        <td id="footerRightbox">
+          <img class="microbanner" src="/img/microbanner/valid_xhtml.png" alt="Valid XHTML 1.0 Strict" /><br />
+          <img class="microbanner" src="/img/microbanner/valid_css.png" alt="Valid CSS" /><br />
+          <img class="microbanner" src="/img/microbanner/zend_framework.gif" alt="Zend Framework in action!" /><br />
+          <img class="microbanner" src="/img/microbanner/jquery2.png" alt="jQuery in action!" /><br />
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html> 

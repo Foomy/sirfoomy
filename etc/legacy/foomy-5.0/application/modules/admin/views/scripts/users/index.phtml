@@ -1,0 +1,93 @@
+<div class="head1">Administration</div>
+<div class="head2"><?php echo $this->translate->_('Benutzer'); ?></div>
+
+<?php echo $this->form; ?>
+
+<table id="userlist" class="listing">
+  <tr>
+    <th>id</th>
+    <th>nickname</th>
+    <th>email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <?php foreach ($this->userlist as $user) { ?>
+  <tr id="user_<?php echo $user->getId(); ?>">
+    <td class="id"><?php echo $user->getId(); ?></td>
+    <td><?php echo $user->getNickname(); ?></td>
+    <td><?php echo $user->getEmail(); ?></td>
+    <td class="ico">
+      <?php if ( $user->isLocked() ) { ?>
+      <img src="/img/icon/led-red-on.png" id="unlock_<?php echo $user->getId(); ?>" class="iconLed" alt="Benutzer freigeben" title="Benutzer freigeben" />
+      <?php } else { ?>
+      <img src="/img/icon/led-grn-on.png" id="lock_<?php echo $user->getId(); ?>" class="iconLed" alt="Benutzer sperren" title="Benutzer sperren" />
+      <?php } ?>
+    </td>
+    <td class="ico">
+      <img src="/img/icon/edit-1.0.png" id="edit_<?php echo $user->getId(); ?>" class="iconEdit" alt="Benutzer bearbeiten." title="Benutzer bearbeiten" />
+    </td>
+    <td class="ico">
+      <img src="/img/icon/delete-1.0.gif" id="delete_<?php echo $user->getId(); ?>" class="iconDelete" alt="Benutzer löschen" title="Benutzer löschen" />
+    </td>
+  </tr>
+  <?php } ?>
+</table>
+<script type="text/javascript">
+/* <![CDATA[ */
+  $(document).ready(function() {
+    $('#reset').click(function() {
+      // Falls "bearbeiten" die Felder grau gemacht hat.
+      $('#password').css('background', '#fff');
+      $('#password_wdh').css('background', '#fff');
+    });
+
+    $('img').live('click', function() {
+      var idData = parseElementId($(this).attr('id'));
+      
+      $.post(
+        idData.action,
+        { userId: idData.id },
+        function(data) {
+          switch (idData.action) {
+            case 'edit':
+              if ( ! data.error ) {
+                $('#user_id').val(idData.id);
+                $('#nickname').val(data.nickname);
+                $('#email').val(data.email);
+                $('#password').val(data.password);
+                $('#password_wdh').val(data.password);
+
+                // Passwörter dürfen nicht einfach so geändert werden.
+                $('#password').attr('readonly', 'readonly');
+                $('#password').css('background', '#ddd');
+                $('#password_wdh').attr('readonly', 'readonly'); 
+                $('#password_wdh').css('background', '#ddd');
+              }
+              break;
+
+              case 'delete':
+                $('#user_'+idData.id).remove();
+                break;
+
+              case 'lock':
+                if ( (! data.error) && data.locked ) {
+                  $('#lock_'+idData.id).attr('src', '/img/icon/led-red-on.png');
+                  $('#lock_'+idData.id).attr('id', 'unlock_'+idData.id);
+                }
+                break;
+
+              case 'unlock':
+                if ( (! data.error) && (! data.locked) ) {
+                  $('#unlock_'+idData.id).attr('src', '/img/icon/led-grn-on.png');
+                  $('#unlock_'+idData.id).attr('id', 'lock_'+idData.id);
+                }
+                break;
+          }// switch
+        },
+        'json'
+      );
+    });
+  });
+/* ]]> */
+</script>

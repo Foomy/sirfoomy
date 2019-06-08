@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <nav>
+    <bookmarks>
+      <label>Bookmarks</label>
+      <uri>/bookmarks/</uri>
+      <module>bookmarks</module>
+      <controller>index</controller>
+      <id>bookmark</id>
+    </bookmarks>
+    <kryptografie>
+      <label>Kryprografie</label>
+      <uri>/kryptografie/</uri>
+      <controller>kryptografie</controller>
+      <id>kryptografie</id>
+    </kryptografie>
+  </nav>
+</config>

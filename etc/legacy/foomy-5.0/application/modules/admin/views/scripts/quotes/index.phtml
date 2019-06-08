@@ -1,0 +1,65 @@
+<div class="head1">Administration</div>
+<div class="head2">Zitate</div>
+
+<?php echo $this->form; ?>
+
+
+<table id="quotelist" class="listing">
+  <tr>
+    <th>id</th>
+    <th>quote</th>
+    <th>author</th>
+    <th>extra</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <?php foreach ($this->quotelist as $quote) { ?>
+  <tr id="quote_<?php echo $quote->getId(); ?>">
+    <td class="id"><?php echo $quote->getId(); ?></td>
+    <td class="quot"><?php echo $quote->getQuoteText(); ?></td>
+    <td class="auth"><?php echo $quote->getAuthor(); ?></td>
+    <td class="xtra"><?php echo $quote->getExtra(); ?></td>
+    <td class="ico">
+      <img src="/img/icon/edit-1.0.png" id="edit_<?php echo $quote->getId(); ?>" class="iconEdit" alt="Zitat bearbeiten" title="Zitat bearbeiten" />
+    </td>
+    <td class="ico">
+      <img src="/img/icon/delete-1.0.gif" id="delete_<?php echo $quote->getId(); ?>" class="iconDelete" alt="Zitat löschen" title="Zitat löschen" />
+    </td>
+  </tr>
+  <?php } ?>
+</table>
+<script type="text/javascript">
+/* <![CDATA[ */
+  $(document).ready(function() {
+    $('img').live('click', function() {
+      var action  = $(this).attr('id').split('_')[0];
+      var quoteId = $(this).attr('id').split('_')[1];
+      
+      $.post(
+        action,
+        {
+          token: '<?php echo $this->ajaxToken; ?>',
+          quoteId: quoteId
+        },
+        function(data) {
+          switch (action) {
+            case 'edit':
+              if ( ! data.error ) {
+                $('#quote_id').val(quoteId);
+                $('#quotetext').val(data.text);
+                $('#author').val(data.author);
+                $('#extra').val(data.extra);
+              }
+              break;
+
+            case 'delete':
+              $('#quote'+quoteId).remove();
+              break;
+          }// switch
+        },
+        'json'
+      );
+    });
+  });
+/* ]]> */
+</script>

@@ -1,0 +1,50 @@
+<p>
+  <form id="nice_checkboxes">
+    <div><input type="checkbox" name="cb1" id="cb1" class="cb" /><label id="cb1_lbl" for="cb1" class="unchecked">checkbox 1</label></div>
+    <div><input type="checkbox" name="cb2" id="cb2" class="cb" /><label id="cb2_lbl" for="cb2" class="unchecked">checkbox 2</label></div>
+    <div><input type="checkbox" name="cb3" id="cb3" class="cb" /><label id="cb3_lbl" for="cb3" class="unchecked">checkbox 3</label></div>
+    <div><input type="checkbox" name="cb4" id="cb4" class="cb" /><label id="cb4_lbl" for="cb4" class="unchecked">checkbox 4</label></div>
+  </form>
+</p>
+<script type="text/javascript">
+/* <![CDATA[ */
+  $(document).ready(function() {
+    $('#cb1_lbl').click(function() {
+      if ( $('#cb1_lbl').hasClass('checked') ) {
+        $('#cb1_lbl').removeClass('checked');
+        $('#cb1_lbl').addClass('unchecked');
+      } else {
+        $('#cb1_lbl').removeClass('unchecked');
+        $('#cb1_lbl').addClass('checked');
+      }
+    });
+    $('#cb2_lbl').click(function() {
+      if ( $('#cb2_lbl').hasClass('checked') ) {
+        $('#cb2_lbl').removeClass('checked');
+        $('#cb2_lbl').addClass('unchecked');
+      } else {
+        $('#cb2_lbl').removeClass('unchecked');
+        $('#cb2_lbl').addClass('checked');
+      }
+    });
+    $('#cb3_lbl').click(function() {
+      if ( $('#cb3_lbl').hasClass('checked') ) {
+        $('#cb3_lbl').removeClass('checked');
+        $('#cb3_lbl').addClass('unchecked');
+      } else {
+        $('#cb3_lbl').removeClass('unchecked');
+        $('#cb3_lbl').addClass('checked');
+      }
+    });
+    $('#cb4_lbl').click(function() {
+      if ( $('#cb4_lbl').hasClass('checked') ) {
+        $('#cb4_lbl').removeClass('checked');
+        $('#cb4_lbl').addClass('unchecked');
+      } else {
+        $('#cb4_lbl').removeClass('unchecked');
+        $('#cb4_lbl').addClass('checked');
+      }
+    });
+  });
+/* ]]> */
+</script>

@@ -1,0 +1,20 @@
+@import url(/skins/default/css/common.css);
+@import url(/skins/default/css/layout.css);
+@import url(/skins/default/css/reusable.css);
+@import url(/skins/default/css/elements.css);
+/* @import url(/skins/default/css/navigation.css); */
+/* @import url(/skins/default/css/forms.css); */
+
+
+
+#overview {
+	padding: 20px;
+}
+
+	#overview ul {
+		padding: 10px 0 0 30px;
+	}
+
+.wfBack {
+	padding: 0 0 0 10px;
+}

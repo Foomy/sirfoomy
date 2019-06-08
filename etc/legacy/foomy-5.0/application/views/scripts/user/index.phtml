@@ -1,0 +1,12 @@
+<?php
+  if ( $this->auth->hasIdentity() ) {
+    $user = $this->auth->getIdentity();
+?>
+<div class="head1"><?php echo $user->getNickname(); ?></div>
+<div class="head2">Benutzerprofil</div>
+
+<?php
+  } else {
+    echo 'Not logged in!';
+  }
+?>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<stylesheets>
+		<stylesheet>layout.css</stylesheet>
+		<stylesheet>common.css</stylesheet>
+		<stylesheet>reusable.css</stylesheet>
+		<stylesheet>elements.css</stylesheet>
+ 		<stylesheet>navigation.css</stylesheet>
+<!-- 		<stylesheet>forms.css</stylesheet> -->
+		<stylesheet>form-generator.css</stylesheet>
+	</stylesheets>
+</skin>

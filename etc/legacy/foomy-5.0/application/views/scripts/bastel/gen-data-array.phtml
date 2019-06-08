@@ -1,0 +1,21 @@
+<?php echo $this->form; ?>
+
+<?php // Zend_Debug::Dump($this->testdata); ?>
+
+<?php echo '$beitraege = array('."\n"; ?>
+<?php foreach ($this->testdata as $index => $data): ?>
+<div class="testdata-element">
+  <pre><?php
+      echo "       $index => array(\n";
+      $beitragsnr = $index+1;
+      echo "        'URL'          => '{$data['URL']}',\n";
+      echo "        'Dachzeile'    => '{$data['Dachzeile']}',\n";
+      echo "        'Ueberschrift' => '{$data['Ueberschrift']}',\n";
+      echo "        'Rubrik'       => '{$data['Rubrik']}',\n";
+      echo "        'Timestamp'    => {$data['Timestamp']},\n";
+      echo "    ),";
+    ?></pre>
+  <?php // echo date('l, m.d.Y - H:i', $data['Timestamp']); ?>
+</div>
+<?php endforeach; ?>
+<?php echo ");\n"; ?>

@@ -1,0 +1,28 @@
+<div class="head1"><?php echo $this->blog->getTitle(); ?></div>
+<div class="head2"><?php echo $this->blog->getSubTitle(); ?></div>
+
+<div id="blog">
+  <?php foreach ($this->blog->getArticles() as $article) { ?>
+  <div id="blogarticle_<?php echo $article->getId(); ?>" class="blogentry">
+    <div class="headline">
+      <a href="/blog/article/show/artid/<?php echo $article->getId(); ?>"><?php echo $article->getHeadline(); ?></a>
+    </div>
+    <div class="subhead"><?php echo $article->getSubhead(); ?></div>
+    <div class="abstract">
+      <?php echo $article->getAbstract(); ?>
+      <a href="/blog/article/show/artid/<?php echo $article->getId(); ?>">mehr...</a>
+    </div>
+    <div class="tags">
+      <?php
+        if ( count($article->getTags())>0 ) { 
+          echo 'Tags: ';
+
+          foreach ($article->getTags() as $tag) {
+            echo $tag->getName().', ';
+          }
+        }
+      ?>
+    </div>
+  </div><!-- /blogarticle -->
+  <?php } ?>
+</div><!-- /blog -->
